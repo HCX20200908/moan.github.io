@@ -30,7 +30,7 @@ section span {
     border-radius : 50%;
     pointer-events: none;
     box-shadow    : inset 0 0 10px rgba(255, 255, 255, 0.5);
-    animation     : animate 10s linear infinite;
+    animation     : animate 20s linear infinite;
 }
 
 section span:before {
@@ -54,7 +54,7 @@ section span:before {
     }
 
     100% {
-        transform: translateY(-2000%);
+        transform: translateY(-3000%);
         opacity  : 0;
     }
 }
