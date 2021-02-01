@@ -7,24 +7,30 @@
     <link href="css/style-mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width: 640px)">
     <link href="css/style-pc.css" rel="stylesheet" type="text/css" media="screen and (min-width: 640px)">
 <body>
-    <section> </section>
-    <script type="text/javascript">
-        function createBubble(){
-            const section = document.querySelector('section')
-            const createElement = document.createElement('span')
-            var size = Math.random() * 60;
+   <audio autoplay="autoplay" loop="loop" preload="auto" controls="controls"
+    src="./bgm/Silent Love (From 'A Scene at the Sea') - 久石让.mp3">       
+    </audio>
+     <section> <div>梦之渊</div> </section>
 
-            createElement.style.width = size + 'px';
-            createElement.style.height = size + 'px';
-            createElement.style.left = Math.random() * innerWidth + 'px';
-            section.appendChild(createElement);
-
-            setTimeout(() => {
-                createElement.remove()
-            },4000)
-        }
-
-        setInterval(createBubble, 50);
-    </script>
 </body>
+
+<script type="text/javascript">
+    function createBubble(){
+        const section = document.querySelector('section')
+        const createElement = document.createElement('span')
+        var size = Math.random() * 60;
+    
+        createElement.style.width = size + 'px';
+        createElement.style.height = size + 'px';
+        createElement.style.left = Math.random() * innerWidth + 'px';
+        section.appendChild(createElement);
+    
+        setTimeout(() => {
+            createElement.remove()
+        },4000)
+    }
+    
+    setInterval(createBubble, 50);
+ </script>
+
 </html>

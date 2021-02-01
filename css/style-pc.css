@@ -12,6 +12,7 @@ section{
     overflow: hidden;
     background-image: url(../images/深海014.webp); 
     background-size:100% 100%;
+   /* background: #111;  */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,5 +54,36 @@ section span:before{
     100%{
         transform: translateY(-1200%);
         opacity: 0;
+    }
+}
+
+/*bgm*/
+audio{
+ display:none;
+}
+
+/*标题*/
+
+section div{
+font-size: 800%;
+font-weight: 500;
+color: white;
+text-shadow: 5px 5px 5px blue;
+animation: font 4s linear 1;
+animation-fill-mode: forwards;
+}
+
+@keyframes font{
+    0%{
+        opacity: 0;
+        scale:(0);
+    }
+    50%{
+        opacity: 1;
+        scale: (1);
+    }
+    100%{
+        opacity: 0;
+        scale: (0);
     }
 }
