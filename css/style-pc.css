@@ -71,8 +71,7 @@ audio {
   pointer-events: none;
   animation: font 4s linear 1;
   animation-fill-mode: forwards;
-  position: relative;
-  left: 5%;
+  position: absolute;
 }
 
 @keyframes font {
@@ -162,7 +161,7 @@ img {
   height: 80%;
   position: relative;
   top: 80px;
-  left: 87%;
+  left: 200%;
   animation-name: changeright1, changeright2;
   animation-duration: 4.5s, 8s;
   animation-timing-function: linear, linear;
