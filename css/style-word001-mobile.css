@@ -2,22 +2,15 @@ body {
   background-image: url("../images/星001.jpg");
 }
 
-.content {
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 main {
-  margin-left: 10%;
-  margin-right: 0%;
+  margin-left: 4%;
+  margin-right: 3%;
 }
 
 h1 {
-  position: relative;
-  left: 11%;
   text-align: center;
   color: white;
+  margin-left: 15%;
 }
 h2 {
   text-align: center;
@@ -91,15 +84,15 @@ a:active {
 
 .b {
   font-size: 400%;
-  font-weight: 500;
+  font-weight: 30%;
   color: white;
   text-shadow: 5px 5px 5p#002699;
   pointer-events: none;
-  animation: font 3s linear 1;
+  animation: font 4s linear 1;
   animation-fill-mode: forwards;
   position: absolute;
-  top: 45%;
-  left: 29%;
+  top: 40%;
+  left: 25%;
 }
 
 @keyframes font {
@@ -107,21 +100,20 @@ a:active {
     opacity: 0;
     scale: (0);
   }
+
   50% {
     opacity: 1;
     scale: (1);
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 5px#002699, 0 0 15px#002699, 0 0 25px#002699,
-      0 0 50px#002699, 0 0 80px#002699, 0 0 120px#002699, 0 0 160px#002699,
-      0 0 200px#002699;
+    text-shadow: 0 0 5px rgb(1, 210, 247), 0 0 15px rgb(1, 210, 247),
+      0 0 25px rgb(1, 210, 247), 0 0 50px rgb(1, 210, 247),
+      0 0 80px rgb(1, 210, 247), 0 0 120px rgb(1, 210, 247),
+      0 0 160px rgb(1, 210, 247), 0 0 200px rgb(1, 210, 247);
   }
-  90% {
-    transform: translate(0) scale(2);
-    opacity: 0;
-  }
+
   100% {
-    transform: translate(0) scale(2);
     opacity: 0;
+    scale: (0);
   }
 }
 
@@ -135,29 +127,28 @@ a:active {
   pointer-events: none;
   color: #fff;
   position: fixed;
-  left: -5%;
-  top: 30%;
   opacity: 0;
   /* transform: translate(-150px, 0) scale(.5);*/
-  animation: leftRight 7s forwards;
-  animation-delay: 3s;
+  animation: leftRight 8s none;
+  animation-delay: 4s;
+  animation-iteration-count: 1;
 }
 
 @keyframes leftRight {
   30% {
-    transform: translate(30px, 0) scale(0.7);
+    transform: scale(0.7);
     opacity: 1;
-    color: #0099ff;
+    color: #ff0055;
   }
   40% {
     color: #fff;
   }
   90% {
-    transform: translate(0) scale(2);
+    transform: translate(0) scale(1.5);
     opacity: 0;
   }
   100% {
-    transform: translate(0) scale(2);
+    transform: translate(0) scale(1.5);
     opacity: 0;
   }
 }
